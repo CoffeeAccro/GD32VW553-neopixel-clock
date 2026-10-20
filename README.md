@@ -1,6 +1,6 @@
 ![GitHub](https://img.shields.io/github/license/viktak/neopixel-clock) ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/viktak/neopixel-clock)
 
-# ESP8266 based Neopixel LED clock
+# GD32VW553 based Neopixel LED clock
 
 This project was created from the following original link. The code was ported with assistance Cursor AI agents.
 
