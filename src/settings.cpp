@@ -7,7 +7,8 @@
 #include "common.h"
 #include "settings.h"
 
-#define DEFAULT_TIMEZONE 13
+/* Index into timechangerules::timezones[] — Mexico City (UTC-6, no DST). */
+#define DEFAULT_TIMEZONE 31
 
 #define DEFAULT_TRAIL_LENGTH 5
 #define DEFAULT_REVERSE_CLOCK_DIRECTION false

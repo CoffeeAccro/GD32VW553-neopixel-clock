@@ -33,7 +33,7 @@ bool isAccessPoint = false;
 bool isAccessPointCreated = false;
 bool needsRestart = false;
 
-const char *ntpServerName = "diy.viktak.com";
+const char *ntpServerName = "mx.pool.ntp.org";
 
 os_timer_t accessPointTimer;
 

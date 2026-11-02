@@ -145,17 +145,23 @@ namespace timechangerules
     static TimeChangeRule NZST = {"NZST", First, Sun, Oct, 2, 720};
     static Timezone NewZealand(NZDT, NZST);
 
+    //  Mexico City (CST, UTC-6 year-round; national DST abolished 2022)
+    static TimeChangeRule MXCST = {"CST", First, Sun, Jan, 0, -360};
+    static Timezone MexicoCity(MXCST);
+
     static Timezone *timezones[] = {
         &Hawaii, &Alaska, &Pacifica, &CentralUS, &MountainUS, &EasternUS, &CaymanIslands, &Cuba, &Argentina, &Brasilia, &Azores,
         &WesternEurope, &CentralEurope, &EasternEurope, &FurtherEasternEurope, &Moscow,
         &Turkey, &Maldives, &Pakistan, &India, &WesternIndonesia, &CentralIndonesia, &EasternIndonesia,
-        &HongKong, &Malaysia, &Philippines, &Singapore, &Japan, &Korea, &EasternAustralia, &NewZealand};
+        &HongKong, &Malaysia, &Philippines, &Singapore, &Japan, &Korea, &EasternAustralia, &NewZealand,
+        &MexicoCity};
 
     static String tzDescriptions[] = {
         "Hawaii", "Alaska", "Pacifica", "Central US", "Mountain US", "Eastern US", "Cayman Islands", "Cuba", "Argentina", "Brasilia", "Azores",
         "Western Europe", "Central Europe", "Eastern Europe", "Further Eastern Europe", "Moscow",
         "Turkey", "Maldives", "Pakistan", "India", "Western Indonesia", "Central Indonesia", "Eastern Indonesia",
-        "HongKong", "Malaysia", "Philippines", "Singapore", "Japan", "Korea", "Eastern Australia", "New Zealand"};
+        "HongKong", "Malaysia", "Philippines", "Singapore", "Japan", "Korea", "Eastern Australia", "New Zealand",
+        "Mexico City"};
 }
 
 #endif
